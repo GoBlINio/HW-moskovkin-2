@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание документа</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #FAF7F2; color: #333; margin: 0; display: flex; }
+        .sidebar { width: 240px; background-color: #ffffff; padding: 20px 15px; border-right: 1px solid #d0c8b8; min-height: 100vh; }
+        .sidebar h3 { margin-top: 0; color: #b85014; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li { margin-bottom: 12px; }
+        .sidebar a { color: #0000ee; text-decoration: underline; }
+        .sidebar a.active { font-weight: bold; color: #b85014; text-decoration: none; }
+        .content { padding: 20px 40px; flex-grow: 1; }
+        .nav-buttons { margin-top: 40px; padding-top: 15px; border-top: 1px solid #d0c8b8; }
+        .nav-buttons a { color: #b85014; font-weight: bold; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h3>Содержание</h3>
+        <ul>
+            <li><a href="index.html">Что такое HTML</a></li>
+            <li><a href="elements.html">Элементы и атрибуты</a></li>
+            <li><a href="docCreate.html" class="active">Создание документа</a></li>
+            <li><a href="syntax.html">Разновидности синтаксиса</a></li>
+            <li><a href="head.html">Элемент head и метаданные</a></li>
+            <li><a href="grouping.html">Элементы группировки</a></li>
+            <li><a href="headers.html">Заголовки</a></li>
+            <li><a href="formatting.html">Форматирование текста</a></li>
+            <li><a href="images.html">Работа с изображениями</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Создание документа</h1>
+        <hr>
+
+        <p>Для создания HTML-документа достаточно любого текстового редактора (например, Блокнот или VS Code). Файл сохраняется с расширением <code>.html</code> или <code>.htm</code>.</p>
+        
+        <p>Минимальный базовый шаблон файла включает следующие теги:</p>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Моя страница&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    Содержимое страницы
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <div class="nav-buttons">
+            <a href="elements.html">← Предыдущая тема: Элементы и атрибуты</a> &nbsp;|&nbsp;
+            <a href="syntax.html">Следующая тема: Разновидности синтаксиса →</a>
+        </div>
+    </div>
+
+</body>
+</html>

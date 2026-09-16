@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Что такое HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAF7F2;
+            color: #333;
+            margin: 0;
+            display: flex;
+        }
+
+        /* Простой сайдбар слева */
+        .sidebar {
+            width: 240px;
+            background-color: #ffffff;
+            padding: 20px 15px;
+            border-right: 1px solid #d0c8b8;
+            min-height: 100vh;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            color: #b85014;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 12px;
+        }
+
+        .sidebar a {
+            color: #0000ee;
+            text-decoration: underline;
+        }
+
+        /* Выделение активной темы */
+        .sidebar a.active {
+            font-weight: bold;
+            color: #b85014;
+            text-decoration: none;
+        }
+
+        /* Основной контент справа */
+        .content {
+            padding: 20px 40px;
+            flex-grow: 1;
+        }
+
+        /* Нижняя навигация */
+        .nav-buttons {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #d0c8b8;
+        }
+
+        .nav-buttons a {
+            color: #b85014;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Меню тем -->
+    <div class="sidebar">
+        <h3>Содержание</h3>
+        <ul>
+            <li><a href="index.html" class="active">Что такое HTML</a></li>
+            <li><a href="elements.html">Элементы и атрибуты</a></li>
+            <li><a href="docCreate.html">Создание документа</a></li>
+            <li><a href="syntax.html">Разновидности синтаксиса</a></li>
+            <li><a href="head.html">Элемент head и метаданные</a></li>
+            <li><a href="grouping.html">Элементы группировки</a></li>
+            <li><a href="headers.html">Заголовки</a></li>
+            <li><a href="formatting.html">Форматирование текста</a></li>
+            <li><a href="images.html">Работа с изображениями</a></li>
+        </ul>
+    </div>
+
+    <!-- Основная статья -->
+    <div class="content">
+        <h1>Что такое HTML</h1>
+        <hr>
+
+        <p><b>HTML</b> (HyperText Markup Language) — это стандартный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML.</p>
+        
+        <p>Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства.</p>
+
+        <!-- Кнопки Назад / Вперед -->
+        <div class="nav-buttons">
+            <span style="color: #888;">← Предыдущая тема</span> &nbsp;|&nbsp;
+            <a href="elements.html">Следующая тема: Элементы и атрибуты →</a>
+        </div>
+    </div>
+
+</body>
+</html>

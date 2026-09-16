@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Элемент head и метаданные</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #FAF7F2; color: #333; margin: 0; display: flex; }
+        .sidebar { width: 240px; background-color: #ffffff; padding: 20px 15px; border-right: 1px solid #d0c8b8; min-height: 100vh; }
+        .sidebar h3 { margin-top: 0; color: #b85014; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li { margin-bottom: 12px; }
+        .sidebar a { color: #0000ee; text-decoration: underline; }
+        .sidebar a.active { font-weight: bold; color: #b85014; text-decoration: none; }
+        .content { padding: 20px 40px; flex-grow: 1; }
+        .nav-buttons { margin-top: 40px; padding-top: 15px; border-top: 1px solid #d0c8b8; }
+        .nav-buttons a { color: #b85014; font-weight: bold; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h3>Содержание</h3>
+        <ul>
+            <li><a href="index.html">Что такое HTML</a></li>
+            <li><a href="elements.html">Элементы и атрибуты</a></li>
+            <li><a href="docCreate.html">Создание документа</a></li>
+            <li><a href="syntax.html">Разновидности синтаксиса</a></li>
+            <li><a href="head.html" class="active">Элемент head и метаданные</a></li>
+            <li><a href="grouping.html">Элементы группировки</a></li>
+            <li><a href="headers.html">Заголовки</a></li>
+            <li><a href="formatting.html">Форматирование текста</a></li>
+            <li><a href="images.html">Работа с изображениями</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Элемент head и метаданные веб-страницы</h1>
+        <hr>
+
+        <p>Тег <code>&lt;head&gt;</code> содержит служебную информацию для браузера и поисковых систем, которая напрямую не отображается в окне браузера.</p>
+
+        <p>Основные дочерние элементы блока <code>&lt;head&gt;</code>:</p>
+        <ul>
+            <li><code>&lt;title&gt;</code> — заголовок страницы (отображается на вкладке браузера).</li>
+            <li><code>&lt;meta charset="UTF-8"&gt;</code> — задание кодировки символов.</li>
+            <li><code>&lt;link&gt;</code> — подключение внешних CSS-файлов или иконки сайта (favicon).</li>
+            <li><code>&lt;style&gt;</code> — встраивание CSS-стилей прямо в HTML.</li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="syntax.html">← Предыдущая тема: Разновидности синтаксиса</a> &nbsp;|&nbsp;
+            <a href="grouping.html">Следующая тема: Элементы группировки →</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Элементы и атрибуты</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #FAF7F2; color: #333; margin: 0; display: flex; }
+        .sidebar { width: 240px; background-color: #ffffff; padding: 20px 15px; border-right: 1px solid #d0c8b8; min-height: 100vh; }
+        .sidebar h3 { margin-top: 0; color: #b85014; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li { margin-bottom: 12px; }
+        .sidebar a { color: #0000ee; text-decoration: underline; }
+        .sidebar a.active { font-weight: bold; color: #b85014; text-decoration: none; }
+        .content { padding: 20px 40px; flex-grow: 1; }
+        .nav-buttons { margin-top: 40px; padding-top: 15px; border-top: 1px solid #d0c8b8; }
+        .nav-buttons a { color: #b85014; font-weight: bold; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h3>Содержание</h3>
+        <ul>
+            <li><a href="index.html">Что такое HTML</a></li>
+            <li><a href="elements.html" class="active">Элементы и атрибуты</a></li>
+            <li><a href="docCreate.html">Создание документа</a></li>
+            <li><a href="syntax.html">Разновидности синтаксиса</a></li>
+            <li><a href="head.html">Элемент head и метаданные</a></li>
+            <li><a href="grouping.html">Элементы группировки</a></li>
+            <li><a href="headers.html">Заголовки</a></li>
+            <li><a href="formatting.html">Форматирование текста</a></li>
+            <li><a href="images.html">Работа с изображениями</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Элементы и атрибуты</h1>
+        <hr>
+
+        <p>HTML-документ состоит из <b>элементов</b>. Каждый элемент обозначается тегом (например, <code>&lt;p&gt;</code> или <code>&lt;div&gt;</code>).</p>
+        
+        <p><b>Атрибуты</b> предоставляют дополнительную информацию об элементе и всегда указываются в открывающем теге. Например: <code>&lt;a href="https://example.com"&gt;Ссылка&lt;/a&gt;</code>, где <i>href</i> — это атрибут.</p>
+
+        <div class="nav-buttons">
+            <a href="index.html">← Предыдущая тема: Что такое HTML</a> &nbsp;|&nbsp;
+            <a href="docCreate.html">Следующая тема: Создание документа →</a>
+        </div>
+    </div>
+
+</body>
+</html>
